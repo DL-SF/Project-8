@@ -2,4 +2,4 @@ Mixed reality systems need to track users in a real-world to keep the illusion o
 “reality”. Multi-modal sensory data acquired from a MR headset (such as Hololens) is used for 
 tracking the user in its MR world. Primarily, two kinds of data - inertial and visual - serve as data 
 sources for tracking. Sensor fusion techniques stitch these data sources from the 9D inertial data 
-and cameras (visual data) to track the user and provide spatial services.
+and cameras (visual data) to track the user and provide spatial services..
