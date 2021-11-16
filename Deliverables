@@ -1,4 +1,4 @@
 Extract inertial and visual data from the Hololens (instructions will be provided)
 Research deep-learning based sensor fusion techniques for tracking
 Implement a sensor fusion algorithm and verify its performance on the Hololens data
-Analyze how accuracy is improved when feature engineering is performed
+Analyze how accuracy is improved when feature engineering is performed.
