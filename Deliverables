@@ -1,4 +1,4 @@
-Extracting inertial and visual data from the Hololens (instructions will be provided)
+Extracting inertial and visual data from the Hololens
 Researching deep-learning based sensor fusion techniques for tracking
 Implementing a sensor fusion algorithm and verify its performance on the Hololens data
 Analyzing the improvement in accuracy when feature engineering is performed.
