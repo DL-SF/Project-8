@@ -1,2 +1,16 @@
-Unity 
-MS visual studio
+Software requirements:
+
+Unity Hub 2020.3.22f1 with Windows Build Support(IL2CPP) and Universal Windows Platform Build Support
+MS visual studio 2019
+Visual C++ 2015-2019
+.NET 5.0 runtime
+OS build 19041.1364 
+Windows 10 SDK 10.0.18362.0
+Mixed Reality Toolkit Foundation 2.5
+Mixed Reality Toolkit Unity Foundation 2.3.0 Unity package
+
+Hardware Requirements:
+
+Windows 10 PC
+Microsoft Hololens 2
+USB connector
