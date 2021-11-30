@@ -1,1 +1,17 @@
-will creat now
+The pose of a camera relative to an initial starting point is conventionally represented as an element of the special
+Euclidean group SE(3) of transformations. SE(3) is a differentiable manifold with elements consisting of a rotation
+from the special orthogonal group SO(3) and a translation vector.
+
+Producing transformation estimates belonging to SE(3) is not straightforward as the SO(3) component needs to be
+an orthogonal matrix. However, the Lie Algebra se(3) of SE(3), representing the instantaneous transformation,can be described by 
+components which are not subject to orthogonality constraints. Conversion between se(3) and SE(3) is then easily accomplished 
+using the exponential map 
+exp: se(3) → SE(3) 
+
+In our network, a CNN-RNN processes the monocular sequence of images to produce an estimate of the frameto-frame motion
+undergone by the camera.
+
+Here the visual ( of dimensions 1280 * 384 *3 ) are fed to the FlowNetC.py file . Here they are flattened
+and concatenated with the inertial data being fed into an LSTM (Long Short Term Memory). The concatenated
+data is then used as input to an SE(3) composition layer where a mathematical operation is carried out 
+to convert the data into SE(3) format to estimate the camera pose.
