@@ -4,6 +4,13 @@ tracking the user in its MR world. Primarily, two kinds of data - inertial and v
 sources for tracking. Sensor fusion techniques stitch these data sources from the 9D inertial data 
 and cameras (visual data) to track the user and provide spatial services..
 
+Sensors are used in almost every industry now: they’re found in our cars, in our factories, and even in our smartphones. While an individual
+sensor may provide useful data on its own, imagine the information that could be extracted from combining output from multiple sensors at 
+once. This would give us a much better model of the world around us, assuming the whole is greater than the sum of its parts. Sensor fusion
+is the process through which we can accomplish this feat. 
 
-Previously, various other sensor fusion techniques have been developed such as  Kalman Filter, Convolutional Neural Networks,
-Bayesian Networks, Dempster Shafer and Central Limit Theorem.
+Specifically, sensor fusion is the process of merging data from multiple sensors to create a more accurate conceptualization of the target
+scene or object. The idea behind it is that each individual sensor has both strengths and weaknesses; the goal is to leverage the strengths 
+of each and reduce any uncertainty to obtain a precise model of the environment being studied.
+
+
