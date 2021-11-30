@@ -1,1 +1,32 @@
+Previously, various other sensor fusion techniques have been developed. They are 
+1) Kalman Filter
+Invented as far back as 1960, the Kalman filter is present in our smartphones and satellites, and commonly used for navigation purposes. Its
+purpose is to estimate the current state of a dynamic system (although it can also estimate the past, known as smoothing, and the future, 
+known as prediction.The Kalman filter is a form of a Bayesian filter. In Bayesian filtering, the algorithm alternates between the prediction (an estimate of what the current state is) 
+and the update (the observations of the sensors).
 
+2) Convolutional Neural Networks
+
+In deep learning, a convolutional neural network (CNN, or ConvNet) is a class of artificial neural network,
+most commonly applied to analyze visual imagery.They are also known as shift invariant or space invariant artificial neural networks
+(SIANN), based on the shared-weight architecture of the convolution kernels or filters that slide along input features and provide 
+translation equivariant responses known as feature maps. CNNs are regularized versions of multilayer perceptron and were inspired by
+biological processes.
+
+3) Bayesian Networks
+
+A Bayesian network is a probabilistic graphical model that represents a set of variables and their conditional dependencies via a directed
+acyclic graph (DAG). Bayesian networks are ideal for taking an event that occurred and predicting the likelihood that any one of several 
+possible known causes was the contributing factor.
+
+3) Dempster Shafer  
+
+The theory of belief functions, also referred to as evidence theory or Dempster–Shafer theory (DST), is a general framework for reasoning 
+with uncertainty, with understood connections to other frameworks such as probability, possibility and imprecise probability theories.
+The theory allows one to combine evidence from different sources and arrive at a degree of belief (represented by a mathematical object 
+called belief function) that takes into account all the available evidence.
+
+4) Central Limit Theorem
+In probability theory, the central limit theorem (CLT) establishes that, in many situations, when independent random variables are summed 
+up, their properly normalized sum tends toward a normal distribution (informally a bell curve) even if the original variables themselves
+are not normally distributed.
