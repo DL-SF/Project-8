@@ -8,7 +8,7 @@ components which are not subject to orthogonality constraints. Conversion betwee
 using the exponential map 
 exp: se(3) → SE(3) 
 
-In our network, a CNN-RNN processes the monocular sequence of images to produce an estimate of the frameto-frame motion
+In our network, a CNN-RNN processes the monocular sequence of images to produce an estimate of the frame-to-frame motion
 undergone by the camera.
 
 Here the visual ( of dimensions 1280 * 384 *3 ) are fed to the FlowNetC.py file . Here they are flattened
