@@ -5,5 +5,5 @@ Mixed reality systems need to track users in a real-world to keep the illusion o
 
 In this project we are implementing sensor fusion algorithms - VINet - for fusing the sensor data gathered from the Microsoft Hololens 2.
 Sensor data is gathered from the Hololens 2 by building and deploying the StreamRecorder App and the SensorVisualization App in Visual Studio 2019 .
-We then connect the Hololens 2 to our laptop via WiFi , anable Research Mode and deploy the applications by selecting Start Debug option in Visual Studio. 
+We then connect the Hololens 2 to our laptop via WiFi , enabling the Research Mode and deploy the applications by selecting Start Debug option in Visual Studio. 
 After the sensor data is collected , the data is retrived by the LocalState cache file in the Windows Device Portal that we set up when we first connected the Hololens to the laptop.
