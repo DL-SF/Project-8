@@ -1,3 +1,6 @@
 1st Project checkin : Understanding the peoblem statement and installing the required softwares.
 2nd Project checking : Hololens 2 connected from PC and code deployment in Hololens (We have tried to build the Stream Recorder App in Unity 
 but have encountered unexpected challenges - it keeps throwing a compilation error- ' unable to write shader into Library')
+3rd Project Check in : We will discuss the motivation, system requirements, implementation and design alternatives to our project. PV and Depth Throw data data extracted from the Holololens 
+and work began on implementing VINet. We downloaded the Sophus file form the internet and tried to install it but setup file is not being able to build 
+because of the pybind11 module. The pybind11 module is not able to build from Google Colab.
