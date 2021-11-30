@@ -1,5 +1,7 @@
+
 Extracting and analyzing sensor data from Hololens and researching about sensor fusion algorithm to improve upon existing techniques using feature engineering forms 
 our main motivation. Hololens is a powerful tool with built in sensing and compute capabilities - an ideal choiuce for computer vision research 
-as well as applications in a various fiels such as assisted surgery and remote collaboration, overlaying of digital twins, etc.
-which i have some idea in data analysis.
-Mainly to know more about this topic like  how sensor fusion stitches both (inertial & visual) data
+as well as applications in a various fields such as assisted surgery and remote collaboration, overlaying of digital twins, etc.
+
+Our goal in to develop deep learning based sensor fusion techniques that are suitable for tracking in mixed reality applications 
+
