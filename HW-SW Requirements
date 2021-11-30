@@ -19,3 +19,10 @@ Hardware Requirements:
 Windows 10 PC/ laptop 
 Microsoft Hololens 2
 USB connector
+
+The computational requirements for odometry prediction and storage space required for model are directly 
+affected by number of parameters used to define the model. For our network , the parameters are the
+weight matrices of the LSTM for both the IMU LSTM and the Core LSTM as well as the CNN network which process
+the images. For our network we use LSTMs with 2 layers with cells of 1000 units. Our CNN total of 55M trainable
+weights. A forward pass of images through the CNN part of the network takes on average 160ms (≈ 10Hz) on a single
+Tesla k80. The LSTM updates are much less computationally expensive and can run at > 200Hz on the Tesla k80. 
