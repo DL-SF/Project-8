@@ -1,1 +1,3 @@
-Developing deep learning based sensor fusion techniques that are suited for tracking in Mixed reality systems.
+Sensor fusion is the process of combining sensor data or data derived from disparate sources such that the resulting information has 
+less uncertainty than would be possible when these sources were used individually.
+Our goals are to develop deep learning based sensor fusion techniques that are suited for tracking in Mixed reality systems.
