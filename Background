@@ -3,3 +3,7 @@ Mixed reality systems need to track users in real-world to project the illusion 
 tracking the user in its MR world. Primarily, two kinds of data - inertial and visual - serve as data 
 sources for tracking. Sensor fusion techniques stitch these data sources from the 9D inertial data 
 and cameras (visual data) to track the user and provide spatial services..
+
+
+Previously, various other sensor fusion techniques have been developed such as  Kalman Filter, Convolutional Neural Networks,
+Bayesian Networks, Dempster Shafer and Central Limit Theorem.
