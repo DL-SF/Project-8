@@ -5,5 +5,5 @@ as well as applications in a various fields such as assisted surgery and remote 
 
 Our goal in to develop deep learning based sensor fusion techniques that are suitable for tracking in mixed reality applications 
 
-Main Motivation is it eliminates the need for tedious manual synchronization of the camera and IMU as well as eliminating the need for manual calibration between 
+Main Motivation is it eliminate the need for tedious manual synchronization of the camera and IMU as well as eliminating the need for manual calibration between 
 the IMU and camera
