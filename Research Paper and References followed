@@ -11,5 +11,8 @@ https://github.com/microsoft/HoloLens2ForCV/blob/main/Docs/ResearchMode-ApiDoc.p
 https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples/StreamRecorder/StreamRecorderApp
 https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples/SensorVisualization
 https://github.com/AaltoVision/ADVIO
-https://arxiv.org/pdf/1701.08376.pdf
+https://arxiv.org/pdf/1701.08376.pdf-VINet: 'Visual-Inertial Odometry as a Sequence-to-Sequence Learning Problem'
 https://github.com/HTLife/VINet
+Sensor Data Fusion Framework to Improve Holographic Object Registration Accuracy for a Shared Augmented Reality Mission Planning Scenario
+'Learning to Fuse: A Deep Learning Approach to Visual-Inertial Camera Pose Estimation"
+'A 3D-Deep-Learning-based Augmented Reality Calibration Method for Robotic Environments using Depth Sensor Data'
