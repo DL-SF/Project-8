@@ -1,6 +1,6 @@
 Subhankar : Setting up Hololens and connecting from PC to Hololens & Research on Sensor fusion algorithm and solving the problem statement 
-writing the project report (o/p data results of model_position tracking using EKF  , VINet (Design Alternative))
-Abhinaba: Deploying code to Hololens and extracting inertial and visual data from Hololens and research on sensor fusion algorithms and writing the 
-project report
-
+providing o/p data results of model_position tracking using EKF  , VINet (Design Alternative) to help in writing the project report, 
+helping in writing the Results portion of the project report and the implementation challenges with respect to VINet and EKF
+Abhinaba: Deploying code to Hololens and extracting inertial and visual data from Hololens and research on sensor fusion algorithms , 
+Writing the  project report ( rest of the sections) 
 Both Team members have the responsibility of updating the progress on Github repository
