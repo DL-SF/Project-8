@@ -11,5 +11,5 @@ The data is then fed into the EKF algorithm and the DNN model where sensor fusio
 
 The EKF algorithm is modelled in sensor.ipynb and the DNN model is defined in tensor.ipynb files. The setup for extracting data from the HoloLens 2 headset and the extracted data has been provided in the Hololens data.md file.
 
-The link to the poster is contained in posterdemo.md file.
+The link to the poster is contained in Poster Demo.md file.
 
