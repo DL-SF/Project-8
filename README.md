@@ -8,3 +8,8 @@ We then connect the Hololens 2 to our laptop via WiFi , enabling the Research Mo
 After the sensor data is collected , the data is retrived by the LocalState cache file in the Windows Device Portal that we set up when we first connected the Hololens to the laptop.
 
 The data is then fed into the EKF algorithm and the DNN model where sensor fusion and training of data takes place.
+
+The EKF algorithm is modelled in sensor.ipynb and the DNN model is defined in tensor.ipynb files. The setup for extracting data from the HoloLens 2 headset and the extracted data has been provided in the Hololens data.md file.
+
+The link to the poster is contained in posterdemo.md file.
+
