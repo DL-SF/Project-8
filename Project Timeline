@@ -4,3 +4,8 @@ but have encountered unexpected challenges - it keeps throwing a compilation err
 3rd Project Check in : We will discuss the motivation, system requirements, implementation and design alternatives to our project. PV and Depth Throw data data extracted from the Holololens 
 and work began on implementing VINet. We downloaded the Sophus file form the internet and tried to install it but setup file is not being able to build 
 because of the pybind11 module. The pybind11 module is not able to build from Google Colab.
+
+We were able to extract the complete data from the Hololens 2 device( image data and the IMU data ) at last! after making the necesssary adjustments
+to the SensorScnario.cpp and AppMain.cpp and other such files , the StreamRecorder sln file was deployed to the HoloLens 2 and data ( depth_long_throw, extrinsics,
+Photovideo data , accelerometer, gyromter and magnetometer data ) were all successfully collected . The screenshots of the same have been provided
+in the report.
