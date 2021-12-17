@@ -7,3 +7,4 @@ Sensor data is gathered from the Hololens 2 by building and deploying the Stream
 We then connect the Hololens 2 to our laptop via WiFi , enabling the Research Mode and deploy the applications by selecting Start Debug option in Visual Studio. 
 After the sensor data is collected , the data is retrived by the LocalState cache file in the Windows Device Portal that we set up when we first connected the Hololens to the laptop.
 
+The data is then fed into the EKF algorithm and the DNN model where sensor fusion and training of data takes place.
