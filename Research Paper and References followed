@@ -1,8 +1,13 @@
-SelectFusion: A Generic Framework to Selectively Learn Multisensory Fusion (https://arxiv.org/pdf/1912.13077.pdf) 
-Learning to Fuse: A Deep Learning Approach to Visual-Inertial Camera Pose Estimation (https://ieeexplore.ieee.org/document/7781768)
-Robust Pose Estimation for Outdoor Mixed Reality with Sensor Fusion (https://link.springer.com/content/pdf/10.1007/978-3-642-02713-0_30.pdf)
+Changhao Chen, Stefano Rosa, Chris Xiaoxuan Lu, Niki Trigoni, Andrew Markham, “ SelectFusion: A Generic Framework to Selectively Learn Multisensory Fusion”  in arXiv.org:1912.13077,  on 30th December, 2019
+
+WStricker , “Learning to Fuse: A Deep Learning Approach to Visual-Inertial Camera Pose Estimation” in 2016 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)
+
+ZhiYing Zhou, Jayashree Karlekar, Daniel Hii, Miriam Schneider, Weiquan Lu, and Stephen Wittkopf , “ Robust Pose Estimation for Outdoor Mixed Reality with Sensor Fusion”
+
 https://docs.unity3d.com/2020.1/Documentation/Manual/class-Shader.html
-'HoloLens 2 Research Mode as a Tool for Computer Vision Research'
+
+Dorin Ungureanu,Federica Bogo, Silvano Galliani ,Pooja Sama ,Xin Duan ,Casey Meekhof, Jan Stuhmer, Thomas J. Cashman, Bugra Tekin, Johannes L. Schonberger, Pawel Olszta ,Marc Pollefeys, “Hololens 2 Research Mode as a tool for Computer Vision Research” 
+
 https://arvrjourney.com/build-your-first-hololens-2-application-with-unity-and-mrtk-2-3-0-5f431d8cca8
 https://github.com/microsoft/HoloLens2ForCV
 https://docs.unity3d.com/Manual/configuring-project-for-xr.html
@@ -10,10 +15,36 @@ https://docs.unity3d.com/Manual/shader-compilation.html
 https://github.com/microsoft/HoloLens2ForCV/blob/main/Docs/ResearchMode-ApiDoc.pdf
 https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples/StreamRecorder/StreamRecorderApp
 https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples/SensorVisualization
+
 https://github.com/AaltoVision/ADVIO
-https://arxiv.org/pdf/1701.08376.pdf-VINet: 'Visual-Inertial Odometry as a Sequence-to-Sequence Learning Problem'
+Ronald Clark , Sen Wang , Hongkai Wen , Andrew Markham and Niki Trigoni, “ VINet: Visual-Inertial Odometry as a Sequence-to-Sequence Learning Problem” in arXiv:1701.08376v2 [cs.CV] , 2nd April, 2017
+
 https://github.com/HTLife/VINet
+
+
 Sensor Data Fusion Framework to Improve Holographic Object Registration Accuracy for a Shared Augmented Reality Mission Planning Scenario
+
 'Learning to Fuse: A Deep Learning Approach to Visual-Inertial Camera Pose Estimation"
+
 'A 3D-Deep-Learning-based Augmented Reality Calibration Method for Robotic Environments using Depth Sensor Data'
 https://github.com/LibofRelax/IMU-Position-Tracking/blob/master/main.py
+
+Chen Song , Shuayb Zarar ,“Sensor Fusion for Learning-based Tracking of Controller Movement in Virtual Reality” in IEEE European Signal Processing Conference (EUSIPCO) , September 2019
+
+E. Foxlin, “Inertial Head-tracker Sensor Fusion by A Complementary Separate-bias Kalman Filter,” in Proc. Int. Symp. Virtual Reality. IEEE, 1996, pp. 185–194.
+
+M. Li and A. I. Mourikis., “ High-precision, Consistent EKF-based Visual-Inertial Odometry” , in The International Journal of Robotics Research, 32(6):690–711, 2013.
+
+E. S. Jones and S. Soatto “ Visual-inertial navigation, mapping and localization: A scalable real-time causal approach” in  The International Journal of Robotics Research, 30(4):407–430, 2011.
+
+G. Iyer, J. Krishna Murthy, G. Gupta, M. Krishna, and L. Paull. “Geometric consistency for self-supervised end-to-end visual odometry” In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops, pages 267–275, 2018.
+
+L. Han, Y. Lin, G. Du, and S. Lian. Deepvio: “Self-supervised deep learning of monocular visual inertial odometry using 3d geometric constraints”. arXiv preprint arXiv:1906.11435, 2019.
+
+A. Kendall and R. Cipolla. “ Geometric loss functions for camera pose regression with deep learning” In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 5974–5983, 2017
+“Sensor Data Fusion Framework to Improve Holographic Object Registration Accuracy for a Shared Augmented Reality Mission Planning Scenario”
+
+
+Zheng Yi Wu , Atiqur Rahman and Qiao Li , “Applying Deep Learning with Extended Kalman Filter and Genetic Algorithm Optimization for Water Distribution Data-Driven Modeling” , in CCWI , 7th September , 2017
+
+Linh Kästner , Vlad Catalin Frasineanu and Jens Lambrecht, “A 3D-Deep-Learning-based Augmented Reality Calibration Method for Robotic Environments using Depth Sensor Data” in arXiv:1912.12101v1 [cs.CV] , 27 Dec,2019
