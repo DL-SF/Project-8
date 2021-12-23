@@ -131,9 +131,11 @@ after the deployment has ended. The Researchmode interface has the ability to qu
 checks all of the sensors that are currently active. Here I had to modify the program for incorporating the code to check the 
 accelerometer , magnetometer and gyrometer sensor were active.
 
- 
-
-       Once the modifications were made, I strapped the Hololens 2 device over my head , I deployed the StreamRecorder App to 
+        
+                                         
+                            PHYSICAL SETUP OF DATA COLLECTION IN HOLOLENS 2 
+			    
+       Once the modifications were made, I strapped the Hololens 2 MR headset device over my head , I deployed the StreamRecorder App to 
 the  HoloLens. A screen was displayed where I had to push a button to start recording . I pushed it and walked around , performed 
 some hand gestures( mainly waving my hands in a semi-circle over my head at the highest point and at the same level as my shoulder
  at the lowest point). After the hand gestures , I performed some squats while the App was stil running and finally I pushed the 
