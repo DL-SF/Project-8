@@ -1,0 +1,155 @@
+﻿
+	                                                  SETUP
+
+We cannot access research mode on the Hololens 2 device until the developer mode is turned on. First , we power on the HoloLens and
+ put on the device. Then ,we use the Start gesture for HoloLens2 by tapping the wrist, the main menu is launched by gazing at the 
+Settings tile and doing an air-tap gesture on HoloLens (2nd Gen). It can also be selected on HoloLens 2 by touching it or using a 
+Hand ray. The ‘Update menu’ item is selected • We then select the ‘For developers’ menu item. And ‘Enable Developer Mode’. 
+• After the previous step is completed, we can scroll down and enable Device Portal. 
+• If Windows  Device Portal is set up, apps can be deployed to this HoloLens over USB or Wi-Fi. All we have to do is select Pair 
+to generate a pairing PIN. We should leave the Settings app at the PIN popup until the PIN is entered into Visual Studio during 
+the first deployment. This pin should be saved as it may be needed again.
+
+
+A.  System  Specifications
+
+The hardware requirements for this project are a laptop with Windows 10 OS with a minimum OS build of 19041.1364. 
+We also require a Mixed Reality Headset – Microsoft Hololens 2 – with both the Research Mode enabled. We need the MR headset 
+to be connected (paired) with our laptop . We would also require a USB connector.
+
+The software requirements for this project are – 
+-MS Visual Studio version 2019, 
+-Visual C++ 21015-2019, 
+-.NET 5.0 runtime, 
+-Windows SDK version 10.0.18362.0, 
+-Mixed Reality Toolkit Foundation 2.5, 
+-Google Colaboratory environment 
+-Keras/Pytorch or Tensorflow framework. 
+-We need Unity Hub Application and 
+-the Mixed Reality Toolkit Unity Foundation version 2.3.0 and 
+-the Unity Hub 2020.3.22f1 with Windows Build Support ,IL2CPP and Universal windows Platform Build Support.
+
+B.  Research Mode Setup
+
+Research Mode is an extension of Developer Mode. Before starting, the developer features of the device need to be enabled to access 
+the Research Mode settings: After opening the Start Menu and selecting the Updates option, we select the For Developers option . 
+The Device Portal should be enabled. After connecting to the Portal , we can scroll down and enable Research mode on the device by 
+allowing access to sensor streams. After selecting the option, we need to restart the Device from the power menu option displayed 
+at the top of the screen.
+
+C.  Connecting Device over WiFi
+
+The hololens should be connected to the wifi. This step can be performed by using voice commands ( the user can speak the command 
+“ What’s my IP ?” while wearing the headset . The voice recognition system of Microsoft will automatically display the IP address of 
+the device’)or by going to Settings-> Network Internet-> Wifi -> Advanced options. Alternatively, we can also go to a web browser 
+on a laptop and type ‘https://”YOUR HOLOLENS IP ADDRESS’. The browser will display the following message: ”There’s a problem with 
+this website’s security certificate” because the certificate, which is issued to the Device Portal, is a test certificate. 
+We can ignore this certificate error for now and continue.
+
+D. Accessing and downloading files over Hololens 2
+ 
+We can move the files from our PC to the Hololens without any additional setup by connecting the Laptop to the Hololens device with 
+a USB cord and then opening the Start menu and selecting File Explorer in the Hololens.
+
+We can then drag our files to the laptop. Alternatively we can access the LocalState cache files in the Windows Device portal after 
+we login with the chosen username and password. The files are timestamped so if there were multiple instances of the StreamRecorder 
+App deployment at different times, we would know which data pertained to which instance of deployment.
+
+E.  Development
+
+For every app , we need to open the Mixed Reality Feature Toolkit Feature tool and select all the features we want to embed in the 
+project. MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found in the Mixed Reality Feature Tool. The Mixed Reality Toolkit Foundation package is the only required package that must be imported and configured to use MRTK with your project. You can use Mixed Reality Toolkit Foundation 2.5.x or newer. This package includes the core components required to create a mixed reality application. After MRTK is added to the scene and configured, two new objects are added to the Scene hierarchy window: Mixed Reality Toolkit,MixedRealityPlayspace. The Mixed RealityToolkit object contains the toolkit itself The
+
+MixedRealityPlayspace object ensures the headset/controllers and other required systems are managed correctly in the scene. The Main
+ Camera object is moved as a child to the MixedRealityPlayspace object. This allows the play space to manage the camera simultaneously
+ with the SDKs.
+
+F.  Deployment in Visual Studio
+
+After connecting the Hololens to the PC, we start the debugger in Visual studio. I used the code in given in in Github – 
+Hololens2forCV and made some modifications for collection of the IMU data. Before deployment of the code in VS 2019, I needed to
+ retarget the solution by selecting the StreamRecorder App and selecting Retarget Project. A pop up window opens where I selected
+ the minimum Windows SDK version as 10.0.15063.0 or 10.0.18362.0 and the SDK version as version 
+10.0.19041.0. Also, the option I selected for the Platform Toolset was ‘No Upgrade’.
+
+For the deployment, I went to the folder where the StreamRecorder App was saved , selected the sln file( solution file ) and opened
+ it with Visual Studio. After the file is opened in VS 2019 , we need to go to Project > Properties > Configuration Properties > 
+Debugging. We enter the IP address of the Hololens device in the Machine name field. The Authentication mode should be set to 
+Universal( unencrypted protocol). We then change the configuration to Release and the ARM64. The Debugger mode needs to be switched to 
+ Remote Machine.  After the building the solution and making sure that the configuration mode is active , I scrolled down the drop 
+down menu and selected the Start Debugging option.
+
+
+
+
+
+
+						DATA EXTRACTION IN HOLOLENS 2
+
+
+
+Microsoft has already provided some code for extracting some types types of data from the HoloLens . The code is available at the 
+Github repository Hololens2forCV. This repository contains documentation and samples for HoloLens 2 Research Mode. It consists of 
+an sln file that is to be deployed in Visual Studio. The repository contains four sample apps:
+
+•	The CalibrationVisualization app which shows a visualization of depth and gray-scale cameras coordinate frames live on
+ device.
+
+•	The CameraWithCVAndCalibration app shows how to process Research Mode streams live on device: it uses OpenCV to detect
+ arUco markers in the two frontal gray-scale cameras and triangulate the detections.
+
+•	The SensorVisualization app (https://github.com/microsoft/HoloLens2ForCV/tree /main/Samples/SensorVisualization) shows how 
+to visualize Research Mode streams live on device.
+
+•	The [StreamRecorder app](https://github.com/microsoft/HoloLens2ForC V/tree/main/Samples/StreamRecorder) shows how to capture
+ simultaneously Research Mode streams (depth and gray-scale cameras) plus head, hand and eye tracking, and saves the streams to disk on device. It also contains a set of python scripts for offline postprocessing. It has many components and programs files such as Sensor Scenario.cpp, AppMain.cpp, etc. The StreamRecorder app uses [Cannon](https://github.com/microsoft/HoloLens2F orCV/tree/main/Samples/StreamRecorder/StreamRe corderApp/Cannon), a collection of wrappers and utility code for building native mixed reality apps using C++, Direct3D and Windows Perception APIs. It can be used as-is outside Research Mode for fast and easy native development.
+
+Of the four we are only concerned with the StreamRecorder App and the SensorVisualizationApp. Now in the code provided by Microsoft ,
+ there is no code to extratct data from the IMU sensors located in the Hololens( Aceelerometer, Gyrometer and Magnetometer). I have
+ included these three files separately ( Accel.cpp, Gyro.cpp and Mag.cpp) inside the StreamRecorderApp.
+ 
+
+Inside the Accel.cpp, we define a function AccelUpdateThread() – which has thread that continually gives permission to continue
+ accessing the sensors. The IsNewTimeStamp() function takes care of the timestamp related to the accelerometer data. The code saves 
+the accelerometer frames and then saves the files when the WriteThread() function is triggered. The Accel.cpp file also sets its own
+ tar ball so that information can be recorded inside the storage folder. This is taken care of by AccelSetStorageFolder() function.	The AccelResetStorageFolder()	function dumps	IMU extrinsics as the streams close down and
+ the recording is finished. The DumpFiles() function dumps extrinsics at the end of the stream.
+
+The C++ programs for the other two sensors – gyrometer and magnetometer -are defined in much the same manner.
+
+The first few lines of the AppMain.cpp program have been modified to reflect the sensor streams being supported. The IMU sensors 
+streams have been added. Then the sensor initializations are performed. MixedReality() is enabled and surface mapping is done to
+ estimate user height. For realization of the sensor scenario the cameras and IMU are initialized as well. Then a sensor scenario 
+instance is created and video frame processing and eye tracking functionalities are enabled.
+
+I have also had to modify the ScensorScenario.cpp file to accommodate the IMU functionalities in this project. In this program , 
+firstly I had to load the an external library and then had to define available for checking whether or not IMU access was granted . 
+A sensor scenario is constructed to access all stream data types while the is deconstruction function is defined to release all
+ sensors. In the InitializeSensor () function the sensor consent is managed by checking each individual type of sensor and then 
+releasing them. Afterwards the Sensor Device consent is also released so that we will not be able to reach the sensors any more 
+after the deployment has ended. The Researchmode interface has the ability to query what type of sensor we are using here, a loop 
+checks all of the sensors that are currently active. Here I had to modify the program for incorporating the code to check the 
+accelerometer , magnetometer and gyrometer sensor were active.
+
+ 
+
+       Once the modifications were made, I strapped the Hololens 2 device over my head , I deployed the StreamRecorder App to 
+the  HoloLens. A screen was displayed where I had to push a button to start recording . I pushed it and walked around , performed 
+some hand gestures( mainly waving my hands in a semi-circle over my head at the highest point and at the same level as my shoulder
+ at the lowest point). After the hand gestures , I performed some squats while the App was stil running and finally I pushed the 
+Stop button to stop the recording. I then clicked the Stop button in Visual Studio where the App was opened. Finally
+I minimized teh Visual Studio application and whent to the Windows Device Portal where I could access the data collected by the 
+HoloLens 2 in the LocalState folder of the File Explorer tab.
+
+
+
+
+
+
+
+
+
+
+
+
+
